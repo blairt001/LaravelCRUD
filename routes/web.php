@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', 'BlogController@home');
+Route::get('/home', 'BlogController@index')->name('home');
+Route::resources('/posts','BlogController');
