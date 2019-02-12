@@ -10,6 +10,8 @@ window.VueAxios = require('vue-axios').default;
 
 Window.Axios = require('axios').default;
 
+let AppLayout = require('./components/App.vue');
+
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
@@ -28,5 +30,5 @@ new Vue(
     Vue.util.extend({
         router },
         AppLayout)
-).$mount(#app)
+).$mount('#app')
 
