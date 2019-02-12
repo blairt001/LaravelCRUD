@@ -19,7 +19,7 @@ class BlogController extends Controller
 
     public function index()
     {
-        return  Post::orderBy('id','Desc')->get();
+        return  Blog::orderBy('id','Desc')->get();
     }
 
     /**
